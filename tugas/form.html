@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css"/>
+  </head>
+  <body>
+    <section class="Form">
+      <header>
+        <h2>Formulir Anggota Perpustakaan</h2>
+      </header>
+      <hr />
+      <form>
+        <label for="Nama">Nama Lengkap</label>
+        <br />
+        <input type="teks" id="Namamu" name="Namamu" placeholder="Masukkan Namamu"/>
+        <br />
+        <label for="kotalahir">Kota Kelahiran</label>
+        <br />
+        <input type="teks" list="kota" id="pilih Kota" name="pilih Kota" placeholder="Pilih Kota Lahir/masukan Kota Lahir"/>
+        <datalist id="kota">
+          <option value="Semarang">Semarang</option>
+          <option value="Yogyakarta">Yogyakarta</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Surabaya">Surabaya</option>
+          <option value="Depok">Depok</option>
+          <option value="klaten">klaten</option>
+          <option value="Tegal">Tegal</option>
+        </datalist>
+        <br>
+        <label for="Tanggal_lahir">Tanggal Lahir</label>
+        <br />
+        <input type="date" id="Tanggal_lahir" name="Tangga_llahir">
+        <br>
+        <label for="Gender">Jenis Kelamin</label>
+        <br />
+        <input type="radio"
+          id="Cowo" name="jenis Kelamin" value="cowo"/>Laki - laki
+        <input type="radio"
+          id="Cewe" name="JenisK Kelamin" value="cewe" />Perempuan
+        <br />
+        <label for="Nomor_Telepon">Nomor Telepon</label>
+        <br />
+        <input type="number" 
+          id="Nomor_Telepon" name="Nomor_Telepon" placeholder="Masukan Nomor Telepon">
+        <br />
+        <label for="Makanan Favorit" >Makanan Favorit</label> <br>
+        <section class="makanan_favorit">
+            <label><input type="checkbox" name="makanan_favorit" value="Mie goreng">mie goreng</label>
+            <label><input type="checkbox" name="makanan_favorit" value="Mie Ayam">Mie Ayam</label>
+            <label><input type="checkbox" name="makanan_favorit" value="Ayam Geprek">Ayam Geprek</label>
+            <label><input type="checkbox" name="makanan_favorit" value="Bakso">Bakso</label>
+        </section>
+        <br>
+        <label for="Agama">Agama</label>
+        <br>
+        <select name="Agama" id="Agama">
+            <option value="milih">Pilih</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select>
+        <br>
+        <label for="Alamat">Alamat</label>
+        <br>
+        <textarea name="Alamat" id="Alamat" placeholder="Masukan Alamatmu"></textarea>
+        <br>
+        <section class="buttons">
+          <button type="button" onclick="this.form.reset()" value="Hapus">Hapus</button>
+          <button type="button" value="kirm">kirim</button>
+        </section>
+      </form>
+    </section>
+  </body>
+</html>

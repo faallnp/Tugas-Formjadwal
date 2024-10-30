@@ -1,0 +1,80 @@
+body {
+    background-image: url(BACK.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Form {
+    background-color: rgb(255, 255, 255);
+    filter: opacity(90%);
+    padding: 10px;
+    border-radius: 8px;
+    border-style: dashed;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 100vh;
+    overflow: auto;
+    -webkit-filter: opacity(90%);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+hr {
+    border-top: 3px dashed;
+}
+label, textarea, select, #Nama,  #Tanggal_lahir, #Nomor_Telepon {
+    width: 100%;
+    margin-bottom: 8px; 
+}
+
+input[type="text"], 
+input[type="date"], 
+textarea, 
+select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;     
+    text-align: center;       
+    justify-content: center;  
+    align-items: center;     
+    margin-top: 15px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button:hover {
+    background-color: #000000;
+    color: white;
+}
